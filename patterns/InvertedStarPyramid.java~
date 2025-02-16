@@ -2,7 +2,7 @@ package patterns;
 
 import java.util.Scanner;
 
-public class StarPyramid {
+public class InvertedStarPyramid {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a number: ");
@@ -12,19 +12,13 @@ public class StarPyramid {
 
     private static void functionToBeCalled(int numberOfRowsByUser) {
         for (int row = 0; row < numberOfRowsByUser; row++) {
-
-            // printing space before star
-            for (int col = 0; col < numberOfRowsByUser - row - 1; col++) {
+            for (int col = 0; col < row; col++) {
                 System.out.print(" ");
             }
 
-            // printing star
-            for (int col = 0; col < 2 * row + 1; col++) {
-                System.out.print("*");
-            }
+            for ()
 
-            // printing space after star
-            for (int col = 0; col < numberOfRowsByUser - row - 1; col++) {
+            for (int col = 0; col < row; col++) {
                 System.out.print(" ");
             }
 

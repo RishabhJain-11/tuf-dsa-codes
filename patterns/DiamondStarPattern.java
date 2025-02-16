@@ -2,7 +2,7 @@ package patterns;
 
 import java.util.Scanner;
 
-public class StarPyramid {
+public interface DiamondStarPattern {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a number: ");
@@ -25,6 +25,21 @@ public class StarPyramid {
 
             // printing space after star
             for (int col = 0; col < numberOfRowsByUser - row - 1; col++) {
+                System.out.print(" ");
+            }
+
+            System.out.println();
+        }
+        for (int row = 0; row < numberOfRowsByUser; row++) {
+            for (int col = 0; col < row; col++) {
+                System.out.print(" ");
+            }
+
+            for (int col = 0; col < 2 * (numberOfRowsByUser - row) - 1; col++) {
+                System.out.print("*");
+            }
+
+            for (int col = 0; col < row; col++) {
                 System.out.print(" ");
             }
 
